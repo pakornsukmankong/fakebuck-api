@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.STRING,
       image: DataTypes.STRING,
     },
-    { underscore: true }
+    { underscored: true }
   );
 
   Post.associate = (db) => {

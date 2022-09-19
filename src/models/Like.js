@@ -2,7 +2,7 @@
 // const DataTypes = require('sequelize').DataTypes;
 
 module.exports = (sequelize, DataTypes) => {
-  const Like = sequelize.define('Like', {}, { underscore: true });
+  const Like = sequelize.define('Like', {}, { underscored: true });
 
   Like.associate = (db) => {
     Like.belongsTo(db.User, {

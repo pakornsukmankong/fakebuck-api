@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
     },
-    { underscore: true }
+    { underscored: true }
   );
 
   Comment.associate = (db) => {

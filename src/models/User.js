@@ -37,7 +37,7 @@ module.exports = (sequelize, DataTypes) => {
       profileImage: DataTypes.STRING,
       coverImage: DataTypes.STRING,
     },
-    { underscore: true }
+    { underscored: true }
   );
 
   User.associate = (db) => {

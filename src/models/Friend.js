@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: FRIEND_PENDING,
       },
     },
-    { underscore: true }
+    { underscored: true }
   );
 
   Friend.associate = (db) => {
