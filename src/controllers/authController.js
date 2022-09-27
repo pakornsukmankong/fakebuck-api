@@ -22,7 +22,7 @@ exports.register = async (req, res, next) => {
       throw new AppError('password is required', 400);
     }
     if (password !== confirmPassword) {
-      throw new AppError('password and confirm password did not match');
+      throw new AppError('password and confirm password did not match', 400);
     }
 
     const isEmail = validator.isEmail(emailOrMobile + '');
